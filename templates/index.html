@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diet Recommendation System</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="#" class="logo">Diet Recommendation System</a>
+        </div>
+        <div class="navbar-nav">
+          <ul>
+            <li><a href="{% url 'calorie_calculator' %}">Calorie Calculator</a></li>
+            <li><a href="#bmi-calculator">BMI Calculator</a></li>
+            <li><a href="#recipe-search">Recipe Search</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="hero">
+      <div class="container">
+        <h1>Welcome to Diet Recommendation System</h1>
+        <p>
+          Get personalized diet recommendations based on your calorie needs,
+          BMI, and food preferences.
+        </p>
+        <button class="btn">Get Started</button>
+      </div>
+    </header>
+
+    <section class="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature">
+              <i class="fas fa-calculator"></i>
+              <h2>Calorie Calculator</h2>
+
+              <p>
+                Calculate your daily calorie needs based on your age, sex,
+                weight, and activity level.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature">
+              <i class="fas fa-scale"></i>
+              <h2>BMI Calculator</h2>
+
+              <p>
+                Calculate your Body Mass Index (BMI) and get recommendations for
+                a healthy weight.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature">
+              <i class="fas fa-utensils"></i>
+              <h2>Recipe Search</h2>
+
+              <p>
+                Search for healthy recipes based on your dietary preferences and
+                ingredient availability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Diet Recommendation System. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
